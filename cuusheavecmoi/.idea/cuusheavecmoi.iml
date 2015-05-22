@@ -6,7 +6,7 @@
         <option name="rootFolder" value="$USER_HOME$/PycharmProjects/cuusheavecmoi" />
         <option name="sdkFolder" value="$USER_HOME$/Documents/google_appengine" />
         <option name="templatesFolder" value="" />
-        <option name="oauth2" value="false" />
+        <option name="oauth2" value="true" />
       </configuration>
     </facet>
   </component>
