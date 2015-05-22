@@ -5,6 +5,9 @@ api_version: 1
 threadsafe: yes
 
 handlers:
+- url: /audio
+  static_dir: static/audio
+
 - url: /favicon\.ico
   static_files: favicon.ico
   upload: favicon\.ico

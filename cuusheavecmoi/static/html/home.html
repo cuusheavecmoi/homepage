@@ -10,9 +10,15 @@
     <link rel="stylesheet" href="/css/bootstrap-theme.min.css">
 
     <!-- Latest compiled and minified JavaScript -->
+    <script src="/js/jquery-1.11.3.min.js"></script>
     <script src="/js/bootstrap.min.js"></script>
 </head>
 <body>
+    <style>
+        audio {
+            display:none;
+        }
+    </style>
     <nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
@@ -45,5 +51,25 @@
         <p><a class="btn btn-primary btn-lg" href="#" role="button">I don't know...知らない。。。 &raquo;</a></p>
       </div>
     </div>
+    <audio id="TEST_AUDIO" src="/audio/Epoq-Lepidoptera.ogg"/>
+    <script>
+        $(document).ready(function(){
+            $("body").on("keydown",function(e){
+                if(e.keyCode==80) {
+                    var myAudio = document.getElementById("TEST_AUDIO");
+                    if(myAudio.paused == false){
+                        myAudio.pause();
+                    }else{
+                        myAudio.play();
+                    }
+                }
+            });
+
+
+        });
+
+
+    </script>
+
 </body>
 </html>
